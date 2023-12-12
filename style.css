@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.logo{
+    width: 130px;
+}
+
+.listitems{
+    display: inline;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+
+.links:hover{
+    color: aqua;
+}
+
+.homecontents{
+    margin: 13% 0px 0px 8%;
+}
+
+#username{
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+#lname{
+    color: orange;
+}
+
+#userdetails{
+    line-height: 1.2;
+}
+
+#download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.homeimages{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.homeimages>img{
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.homeimages:hover .shape{
+    bottom: 80px;
+
+}
+
+.homeimages:hover .girl{
+    left: 40%;
+}
+
+#about{
+    margin: 15% 8% 0px 8%;
+}
+
+.sectionhead{
+    text-align: center;
+}
+
+.mainhead{
+    font-size: 30px;
+}
+
+.subhead{
+    font-size: 20px;
+    color: green;
+}
+
+.aboutbody{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.aboutimg>img{
+     width: 90%;
+}
+
+.aboutcontent{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.info{
+    margin-top: 1rem;
+}
+
+.infobox{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.infobox>span{
+    margin-left: 1rem;
+}
+
+#skill{
+    margin: 8% 8% 0px 8%;
+}
+
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+   
+}
+
+.skillimg>img{
+    width: 90%;
+}
+
+.bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.bar>h3,span{
+    font-weight: 500;
+    font-size: 1.1rem
+}
+
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.htmlbar{
+    width: 90%;
+    background-color: orange;
+}
+
+.cssbar{
+    width: 92%;
+    background-color: orange;
+}
+
+.jsbar{
+    width: 85%;
+    background-color: orange;
+}
+
+.reactbar{
+    width: 80%;
+    background-color: orange;
+}
+
+#contact{
+    margin: 8%;
+}
+
+.iconcollections{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid 1px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right, orange, yellow, white);
+}
+
+.brand{
+    font-size: 30px;
+    color: black;
+}
+
+.icon:hover .brand{
+    color: white;
+    animation: move 1s;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    50%{
+        transform: rotate(15deg);
+    }
+    75%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+
+footer>p{
+    font-weight: 600;
+    text-align: center;
+}
+
+.uparrow{
+    float: right;
+    margin: -40px 30px 30px 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
